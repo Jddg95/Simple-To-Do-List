@@ -9,4 +9,8 @@ submitButton.addEventListener("click", function () {
   newTaskItem.innerText = task; //adds task text to list item.
   taskList.appendChild(newTaskItem); // adds the new list item to task list (ul)
   textInput.value = ""; // clear text input
+
+  newTaskItem.addEventListener("click", function () {
+    newTaskItem.remove(); // remove task when clicked
+  });
 });
