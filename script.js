@@ -7,4 +7,5 @@ submitButton.addEventListener("click", function () {
   console.log("task");
   const newTaskItem = document.createElement("li"); // Creates a new list item element
   newTaskItem.innerText = task; //adds task text to list item.
+  taskList.appendChild(newTaskItem); // adds the new list item to task list (ul)
 });
